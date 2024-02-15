@@ -11,6 +11,8 @@
 		9267FBD72B7E89DF00B5FAE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FBD62B7E89DF00B5FAE0 /* ContentView.swift */; };
 		9267FBD92B7E89E100B5FAE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9267FBD82B7E89E100B5FAE0 /* Assets.xcassets */; };
 		9267FBDC2B7E89E100B5FAE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9267FBDB2B7E89E100B5FAE0 /* Preview Assets.xcassets */; };
+		9267FBE32B7E8B2E00B5FAE0 /* FoodItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FBE22B7E8B2E00B5FAE0 /* FoodItemView.swift */; };
+		9267FBE52B7E933A00B5FAE0 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FBE42B7E933A00B5FAE0 /* FoodItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		9267FBD62B7E89DF00B5FAE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9267FBD82B7E89E100B5FAE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9267FBDB2B7E89E100B5FAE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9267FBE22B7E8B2E00B5FAE0 /* FoodItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemView.swift; sourceTree = "<group>"; };
+		9267FBE42B7E933A00B5FAE0 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 			children = (
 				9267FBD42B7E89DF00B5FAE0 /* CalorieTrackerApp.swift */,
 				9267FBD62B7E89DF00B5FAE0 /* ContentView.swift */,
+				9267FBE22B7E8B2E00B5FAE0 /* FoodItemView.swift */,
 				9267FBD82B7E89E100B5FAE0 /* Assets.xcassets */,
 				9267FBDA2B7E89E100B5FAE0 /* Preview Content */,
+				9267FBE42B7E933A00B5FAE0 /* FoodItem.swift */,
 			);
 			path = CalorieTracker;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9267FBE52B7E933A00B5FAE0 /* FoodItem.swift in Sources */,
+				9267FBE32B7E8B2E00B5FAE0 /* FoodItemView.swift in Sources */,
 				9267FBD72B7E89DF00B5FAE0 /* ContentView.swift in Sources */,
 				9267FBD52B7E89DF00B5FAE0 /* CalorieTrackerApp.swift in Sources */,
 			);
