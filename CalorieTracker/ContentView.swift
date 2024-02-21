@@ -19,22 +19,26 @@ struct ContentView: View {
     @State var calories = ""
     
     var body: some View {
-        VStack {
-            List(foodItemsList, id: \.self) { foodItem in
-                FoodItemView(name: foodItem.name, calories: foodItem.calories)
-            }
-            Button("Add Item") {
-                isAddAlertPresented.toggle()
-            }.alert("Enter Food Item", isPresented: $isAddAlertPresented) {
-                TextField("Food Name", text: $name)
-                TextField("Calories", text: $calories)
-                Button("OK", action: submit)
-                Button("Cancel", action: {
-                    return
-                })
-            }
+        NavigationStack {
+            VStack {
+                List(foodItemsList, id: \.self) { foodItem in
+                    FoodItemView(name: foodItem.name, calories: foodItem.calories)
+                }
+                Button {
+                    isAddAlertPresented.toggle()
+                } label: {
+                    Label("Add Item", systemImage: "plus")
+                }
+                    .alert("Enter Food Item", isPresented: $isAddAlertPresented) {
+                    TextField("Food Name", text: $name)
+                    TextField("Calories", text: $calories)
+                    Button("OK", action: submit)
+                    Button("Cancel", action: {
+                        return
+                    })
+                }
+            }.navigationTitle("Calorie Tracker")
         }
-        .padding()
     }
     
     func submit() {
